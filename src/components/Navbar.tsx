@@ -7,7 +7,6 @@ import Logout from '@mui/icons-material/Logout';
 const useStyles = makeStyles(() => ({
     navbarContainer: {
         width: '100%',
-        // height: '10vh',
         display: 'grid',
         gridTemplateColumns: '150px 1fr 100px',
         alignItems: 'center',
@@ -16,7 +15,6 @@ const useStyles = makeStyles(() => ({
 
 export default function Navbar({ avatar, onLogOut }: any) {
     const classes = useStyles()
-
     const [anchorEl, setAnchorEl] = useState<null | HTMLElement>(null);
     const open = Boolean(anchorEl);
     const handleClick = (event: React.MouseEvent<HTMLElement>) => {
